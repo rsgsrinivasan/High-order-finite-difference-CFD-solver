@@ -8986,10 +8986,7 @@ int main(int argc, char **argv)
 					}	 */			
 					//restart_file(NELEM, NUMNP, node, CD, u, v, w, rho, p, t, e, mu, iter, restart_num);
 					//writefile(NELEM, NUMNP, node, CD, tauzz, tauze, tauee, qz, qe, u_zeta, v_zeta, t_zeta, u_eta, v_eta, t_eta);
-					
-				 	sprintf(filename,"nohup ./preplot nodefile_%d.dat > preplot.out",iter);
-					system(filename);
-					system("rm -rf preplot.out *.dat"); 
+					 
 				}
 				
 				if (restart_num > 2)
